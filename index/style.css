@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: auto;
+}
+.producto-card {
+    background-color: aqua;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    text-align: center;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+}
+
+.navbar {
+    background-color: #ff0000;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px; 
+}
