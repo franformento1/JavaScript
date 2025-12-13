@@ -5,7 +5,7 @@
     overflow-x: auto;
 }
 .producto-card {
-    background-color: aqua;
+    background-color: rgb(0, 0, 0);
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 16px;
@@ -15,9 +15,33 @@
 }
 
 .navbar {
-    background-color: #ff0000;
+    background-color: #2d2c2c;
     overflow: hidden;
     padding: 20px;
     text-align: center;
     font-size: 20px; 
+    overflow: hidden;
+}
+
+.navbar a {
+    display: inline-block;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.producto-card h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.producto-card p {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.producto-card b {
+    color: white;
+    font-size: 18px;
 }
