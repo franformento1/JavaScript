@@ -2,46 +2,32 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    overflow-x: auto;
 }
-.producto-card {
-    background-color: rgb(0, 0, 0);
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 16px;
-    margin: 16px;
-    text-align: center;
-    box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    overflow-x: hidden;
 }
 
 .navbar {
-    background-color: #2d2c2c;
-    overflow: hidden;
-    padding: 20px;
-    text-align: center;
-    font-size: 20px; 
-    overflow: hidden;
+    background-color: #222;
+    padding: 15px;
+    margin-bottom: 20px;
 }
 
 .navbar a {
-    display: inline-block;
     color: white;
-    padding: 10px 15px;
+    margin-right: 15px;
     text-decoration: none;
-    text-align: center;
 }
 
-.producto-card h3 {
-    color: white;
-    margin-bottom: 10px;
+.producto-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
 }
 
-.producto-card p {
-    color: white;
-    margin-bottom: 15px;
-}
-
-.producto-card b {
-    color: white;
-    font-size: 18px;
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
 }
