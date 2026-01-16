@@ -1,6 +1,5 @@
 console.log("MAIN.JS CARGADO");
 
-// NAVBAR (tu código)
 let navbar = document.createElement("nav");
 navbar.classList.add("navbar");
 navbar.innerHTML = `
@@ -11,17 +10,14 @@ navbar.innerHTML = `
 </div>`;
 document.body.prepend(navbar);
 
-// VARIABLES
 let carrito = [];
 let productos = [];
 
-// CONTENEDORES
 const contenedorProductos = document.getElementById("productos");
 const contenedorCarrito = document.getElementById("carrito");
 const totalHTML = document.getElementById("total");
 const btnFinalizar = document.getElementById("finalizar");
 
-// FETCH JSON
 fetch("./productos.json")
   .then(response => response.json())
   .then(data => {
@@ -29,7 +25,6 @@ fetch("./productos.json")
     renderProductos(productos);
   });
 
-// RENDER PRODUCTOS
 function renderProductos(lista) {
   contenedorProductos.innerHTML = "";
   for (const producto of lista) {
@@ -44,7 +39,6 @@ function renderProductos(lista) {
   }
 }
 
-// AGREGAR AL CARRITO
 function agregarAlCarrito(id) {
   const producto = productos.find(p => p.id === id);
   carrito.push(producto);
@@ -58,7 +52,6 @@ function agregarAlCarrito(id) {
   renderCarrito();
 }
 
-// RENDER CARRITO
 function renderCarrito() {
   contenedorCarrito.innerHTML = "";
 
@@ -72,7 +65,6 @@ function renderCarrito() {
   totalHTML.textContent = `Total: $${total}`;
 }
 
-// FINALIZAR COMPRA
 btnFinalizar.addEventListener("click", () => {
   if (carrito.length === 0) {
     Swal.fire("Carrito vacío", "Agregá productos", "warning");
